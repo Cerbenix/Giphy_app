@@ -1,9 +1,11 @@
 {
-    "name": "kmate/giphy_app",
+    "name": "kmate/crypto-api",
     "autoload": {
         "psr-4": {
             "App\\": "app/"
         }
     },
-    "require": {}
+    "require": {
+        "guzzlehttp/guzzle": "^7.5"
+    }
 }
