@@ -4,7 +4,7 @@ namespace App\Controllers;
 
 use App\Services\ApiClient;
 
-class Controller
+class GifController
 {
     private ApiClient $apiClient;
 
@@ -25,12 +25,12 @@ class Controller
     private function handleTrending(): void
     {
         $gifs = $this->apiClient->fetchTrending();
-        include 'app/View/View.html';
+        include 'app/View/GifView.html';
     }
 
     private function handleSearch(string $term): void
     {
         $gifs = $this->apiClient->fetchSearched($term);
-        include 'app/View/View.html';
+        include 'app/View/GifView.html';
     }
 }
