@@ -20,7 +20,7 @@ class ApiClient
     {
         $params = [
             'query' => [
-                'limit' => 20,
+                'limit' => 24,
                 'api_key' => $_ENV['API_KEY']
             ]
         ];
@@ -34,7 +34,7 @@ class ApiClient
         $params = [
             'query' => [
                 'q' => $term,
-                'limit' => 20,
+                'limit' => 24,
                 'api_key' => $_ENV['API_KEY']
             ]
         ];

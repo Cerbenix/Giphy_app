@@ -19,10 +19,10 @@ class Controller
             $this->handleSearch($_GET['search']);
             return;
         }
-        $this->handleStart();
+        $this->handleTrending();
     }
 
-    private function handleStart(): void
+    private function handleTrending(): void
     {
         $gifs = $this->apiClient->fetchTrending();
         include 'app/View/View.html';
