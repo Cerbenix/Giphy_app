@@ -43,7 +43,8 @@ body {
     box-shadow: inset 1px 1px 8px #b9b9b9;
 
 }
-.search-box input[type="text"]:focus{
+
+.search-box input[type="text"]:focus {
     outline: none;
 }
 
@@ -54,8 +55,6 @@ body {
     border-radius: 3px;
     margin-left: -3px;
 }
-
-
 
 .gifs {
     display: flex;

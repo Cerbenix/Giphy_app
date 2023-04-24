@@ -21,6 +21,4 @@ class GifController
         }
         include 'app/View/GifView.html';
     }
-
-
 }
