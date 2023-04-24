@@ -7,3 +7,5 @@ $dotenv->load();
 
 $app = new \App\Controllers\GifController();
 $app->run();
+
+//http://localhost:8000/main.php
