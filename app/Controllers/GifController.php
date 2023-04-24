@@ -15,9 +15,10 @@ class GifController
 
     public function run(): void
     {
-        $gifs = $this->apiClient->fetchTrending();
-        if($_POST){
+        if($_POST && !empty($_POST['search'])){
             $gifs = $this->apiClient->fetchSearched($_POST['search']);
+        } else {
+            $gifs = $this->apiClient->fetchTrending();
         }
         include 'app/View/GifView.html';
     }
