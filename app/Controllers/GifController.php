@@ -15,22 +15,12 @@ class GifController
 
     public function run(): void
     {
-        if (isset($_GET['search']) && !empty($_GET['search'])) {
-            $this->handleSearch($_GET['search']);
-            return;
-        }
-        $this->handleTrending();
-    }
-
-    private function handleTrending(): void
-    {
         $gifs = $this->apiClient->fetchTrending();
+        if($_POST){
+            $gifs = $this->apiClient->fetchSearched($_POST['search']);
+        }
         include 'app/View/GifView.html';
     }
 
-    private function handleSearch(string $term): void
-    {
-        $gifs = $this->apiClient->fetchSearched($term);
-        include 'app/View/GifView.html';
-    }
+
 }
