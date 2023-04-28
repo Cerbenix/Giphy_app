@@ -1,0 +1,27 @@
+.header-container {
+    display: flex;
+    justify-content: space-evenly;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 80px;
+    background-color: #3b3b3b;
+    z-index: 1;
+    box-shadow: 0 0 20px 0 #3b3b3b;
+}
+
+.header-title {
+    font-size: 50px;
+    margin: 5px;
+    white-space: nowrap;
+    color: #3e52c9;
+    border: solid 3px #ff0e13;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: #ffdf41;
+}
+
+.header-title:hover {
+    cursor: pointer;
+}

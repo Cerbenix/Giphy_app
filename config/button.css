@@ -1,0 +1,14 @@
+.get-random {
+    padding: 5px;
+    font-size: 16px;
+    border: 2px solid #b9b9b9;
+    border-radius: 3px;
+    margin: 20px 0 20px;
+    display: flex;
+    align-items: center;
+    background-color: #dadada;
+}
+
+.get-random:hover {
+    cursor: pointer;
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lidl Giphy</title>
+    <link rel="stylesheet" href="/config/styles.css">
+    <link rel="stylesheet" href="/config/header.css">
+    <link rel="stylesheet" href="/config/randomGif.css">
+    <link rel="stylesheet" href="/config/searchBox.css">
+    <link rel="stylesheet" href="/config/button.css">
+
+</head>
+<body>
+<div class="header-container">
+    <h1 class="header-title" onclick="window.location.href = '/'">LIDL GIPHY</h1>
+    <button class="get-random" onclick="window.location.href = '/random'">
+        Get Random
+    </button>
+    <form class="search-box" method="POST" action="/search">
+        <label for="search"></label>
+        <input type="text" id="search" name="search" placeholder="Search">
+        <button type="submit">Search</button>
+    </form>
+</div>
+<div class="random-gif">
+    <div class="random-img-container">
+        <img src="{{ gif.getUrl() }}" alt="">
+    </div>
+    <div class="random-gif-title">
+        {{ gif.getTitle() }}
+    </div>
+</div>
+</body>
+</html>

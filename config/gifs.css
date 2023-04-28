@@ -1,0 +1,34 @@
+.gifs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gif {
+    margin: 10px;
+    position: relative;
+    border: 2px solid #b9b9b9;
+    border-radius: 5px;
+    background-color: #3b3b3b;
+    box-shadow: 0 0 10px #3b3b3b;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.img-container {
+    display: flex;
+    justify-content: center;
+}
+
+.img-container img {
+    align-self: center;
+    max-height: 200px;
+}
+
+.gif-title {
+    padding: 5px;
+    color: white;
+    width: 200px;
+    text-align: center;
+}

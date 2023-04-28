@@ -1,0 +1,28 @@
+.random-gif {
+    display: flex;
+    border: 2px solid #b9b9b9;
+    border-radius: 5px;
+    background-color: #3b3b3b;
+    box-shadow: 0 0 10px #3b3b3b;
+    flex-direction: column;
+    width: 500px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.random-img-container {
+    display: flex;
+    justify-content: center;
+    width: 500px;
+}
+
+.random-img-container img {
+    width: 500px;
+}
+
+.random-gif-title {
+    padding: 5px;
+    color: white;
+    text-align: center;
+}

@@ -42,6 +42,18 @@ class ApiClient
         $report = json_decode($response->getBody()->getContents());
         return $this->collectGifs($report);
     }
+    public function fetchRandom(): Gif
+    {
+        $params = [
+            'query' => [
+                'limit' => 24,
+                'api_key' => $_ENV['API_KEY']
+            ]
+        ];
+        $response = $this->apiClient->get('v1/gifs/random', $params);
+        $report = json_decode($response->getBody()->getContents());
+        return new Gif($report->data->title, $report->data->images->original->url);
+    }
 
     private function collectGifs(\stdClass $report): array
     {
