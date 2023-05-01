@@ -2,7 +2,7 @@
 
 require_once 'vendor/autoload.php';
 
-$loader = new Twig\Loader\FilesystemLoader('app/View');
+$loader = new Twig\Loader\FilesystemLoader('app/Views');
 $twig = new Twig\Environment($loader);
 
 $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);

@@ -15,7 +15,7 @@ class GifController
     public function __construct()
     {
         $this->apiClient = new ApiClient();
-        $this->twigLoader = new FilesystemLoader('app/View');
+        $this->twigLoader = new FilesystemLoader('app/Views');
         $this->twig = new Environment($this->twigLoader);
     }
 

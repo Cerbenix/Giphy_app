@@ -12,7 +12,7 @@ class ErrorController
 
     public function __construct()
     {
-        $this->twigLoader = new FilesystemLoader('app/View');
+        $this->twigLoader = new FilesystemLoader('app/Views');
         $this->twig = new Environment($this->twigLoader);
     }
 
