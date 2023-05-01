@@ -38,6 +38,7 @@ class GifController
         };
         return $this->twig->render('GifCollectionView.twig', ['gifs' => $gifs]);
     }
+
     public function random(): string
     {
         $gif = $this->apiClient->fetchRandom();

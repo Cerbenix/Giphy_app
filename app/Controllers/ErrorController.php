@@ -15,6 +15,7 @@ class ErrorController
         $this->twigLoader = new FilesystemLoader('app/View');
         $this->twig = new Environment($this->twigLoader);
     }
+
     public function show(array $vars): string
     {
         $message = $vars['message'];
